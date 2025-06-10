@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para mi cosita hermosa 💖</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffe6f0;
+      color: #333;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #e91e63;
+    }
+    .question {
+      margin-bottom: 30px;
+    }
+    .question h2 {
+      font-size: 18px;
+      color: #d81b60;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    label.option {
+      background-color: #f8bbd0;
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.3s;
+    }
+    label.option:hover {
+      background-color: #f48fb1;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+    #finalMessage {
+      display: none;
+      background: #fce4ec;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 18px;
+    }
+    .selected-list {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 15px;
+      background: #f48fb1;
+      color: white;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+<h1>💖 Para mi cosita hermosa 💖</h1>
+<p style="text-align:center;">Responde estas preguntitas para saber qué haremos juntitos a la distancia 😘</p>
+
+<form id="quizForm">
+
+  <div class="question">
+    <h2>1. ¿Qué tipo de momento quieres compartir hoy?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q1" value="💬 Una charla profunda"> 💬 Una charla profunda</label>
+      <label class="option"><input type="checkbox" name="q1" value="🎮 Algo divertido como un juego"> 🎮 Algo divertido como un juego</label>
+      <label class="option"><input type="checkbox" name="q1" value="💌 Un momento romántico y cursi"> 💌 Un momento romántico y cursi</label>
+      <label class="option"><input type="checkbox" name="q1" value="🔥 Algo más atrevido"> 🔥 Algo más atrevido</label>
+      <label class="option"><input type="checkbox" name="q1" value="📽️ Ver algo juntos"> 📽️ Ver algo juntos</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>2. ¿Cuál de estas actividades te gustaría hacer esta noche?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q2" value="🕯️ Cena virtual con velas"> 🕯️ Cena virtual con velas</label>
+      <label class="option"><input type="checkbox" name="q2" value="🎧 Escuchar música y hablar"> 🎧 Escuchar música y hablar</label>
+      <label class="option"><input type="checkbox" name="q2" value="🎲 Hacer retos de “Verdad o reto”"> 🎲 Hacer retos de “Verdad o reto”</label>
+      <label class="option"><input type="checkbox" name="q2" value="🛏️ Hablar subido de tono y coquetear"> 🛏️ Hablar subido de tono y coquetear</label>
+      <label class="option"><input type="checkbox" name="q2" value="📷 Mandarnos fotos lindas del día"> 📷 Mandarnos fotos lindas del día</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>3. ¿Qué juego a distancia suena mejor?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q3" value="💭 20 preguntas para conocernos más"> 💭 20 preguntas para conocernos más</label>
+      <label class="option"><input type="checkbox" name="q3" value="🎤 Karaoke por videollamada"> 🎤 Karaoke por videollamada</label>
+      <label class="option"><input type="checkbox" name="q3" value="📱 Verdad o reto hot"> 📱 Verdad o reto hot</label>
+      <label class="option"><input type="checkbox" name="q3" value="🎲 Juegos web como Gartic o Adivina la palabra"> 🎲 Juegos web como Gartic o Adivina la palabra</label>
+      <label class="option"><input type="checkbox" name="q3" value="✍️ Escribir una historia romántica juntos"> ✍️ Escribir una historia romántica juntos</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>4. ¿Qué te gustaría que pasara esta noche en llamada?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q4" value="😘 Un beso largo aunque sea virtual"> 😘 Un beso largo aunque sea virtual</label>
+      <label class="option"><input type="checkbox" name="q4" value="🔥 Que te diga todo lo que te haría si estuviera contigo"> 🔥 Que te diga todo lo que te haría si estuviera contigo</label>
+      <label class="option"><input type="checkbox" name="q4" value="🫦 Mostrarte algo solo para tus ojos"> 🫦 Mostrarte algo solo para tus ojos</label>
+      <label class="option"><input type="checkbox" name="q4" value="🥰 Un momento dulce con palabras lindas"> 🥰 Un momento dulce con palabras lindas</label>
+      <label class="option"><input type="checkbox" name="q4" value="😈 Un coqueteo sin censura"> 😈 Un coqueteo sin censura</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>5. ¿Qué tipo de sorpresa te gustaría recibir?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q5" value="🎥 Un video mío contándote cuánto te amo"> 🎥 Un video mío contándote cuánto te amo</label>
+      <label class="option"><input type="checkbox" name="q5" value="📸 Una foto coqueta solo para ti"> 📸 Una foto coqueta solo para ti</label>
+      <label class="option"><input type="checkbox" name="q5" value="💌 Una carta romántica"> 💌 Una carta romántica</label>
+      <label class="option"><input type="checkbox" name="q5" value="🔥 Un audio susurrándote cosas atrevidas"> 🔥 Un audio susurrándote cosas atrevidas</label>
+      <label class="option"><input type="checkbox" name="q5" value="🎁 Un regalito virtual inesperado"> 🎁 Un regalito virtual inesperado</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>6. ¿Cuál de estos retos harías sin pensarlo?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q6" value="🥵 Decirme algo que fantaseas conmigo"> 🥵 Decirme algo que fantaseas conmigo</label>
+      <label class="option"><input type="checkbox" name="q6" value="😈 Mandarme una foto atrevida pero artística"> 😈 Mandarme una foto atrevida pero artística</label>
+      <label class="option"><input type="checkbox" name="q6" value="💘 Decirme algo que siempre has querido pero nunca te atreviste"> 💘 Decirme algo que siempre has querido pero nunca te atreviste</label>
+      <label class="option"><input type="checkbox" name="q6" value="💞 Enviarme un audio diciendo lo mucho que me amas"> 💞 Enviarme un audio diciendo lo mucho que me amas</label>
+      <label class="option"><input type="checkbox" name="q6" value="💋 Decirme cómo sería tu cita perfecta conmigo, sin filtros"> 💋 Decirme cómo sería tu cita perfecta conmigo, sin filtros</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>7. ¿Qué parte de mí extrañas más?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q7" value="💋 Mis besos"> 💋 Mis besos</label>
+      <label class="option"><input type="checkbox" name="q7" value="🖐️ Mis caricias"> 🖐️ Mis caricias</label>
+      <label class="option"><input type="checkbox" name="q7" value="🫂 Mi cuerpo abrazándote"> 🫂 Mi cuerpo abrazándote</label>
+      <label class="option"><input type="checkbox" name="q7" value="😏 Mi voz diciéndote cosas lindas (o atrevidas)"> 😏 Mi voz diciéndote cosas lindas (o atrevidas)</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>8. ¿Cómo te gustaría terminar la noche?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q8" value="🧸 Hablando hasta dormirnos"> 🧸 Hablando hasta dormirnos</label>
+      <label class="option"><input type="checkbox" name="q8" value="😘 Diciéndonos lo mucho que nos amamos"> 😘 Diciéndonos lo mucho que nos amamos</label>
+      <label class="option"><input type="checkbox" name="q8" value="🔥 Con una charla subidita de tono"> 🔥 Con una charla subidita de tono</label>
+      <label class="option"><input type="checkbox" name="q8" value="📸 Enviándonos algo especial"> 📸 Enviándonos algo especial</label>
+      <label class="option"><input type="checkbox" name="q8" value="💬 Planeando cuándo vernos"> 💬 Planeando cuándo vernos</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>9. ¿Qué te gustaría que yo hiciera ahora mismo?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q9" value="😈 Que me pusiera algo sexy solo para ti"> 😈 Que me pusiera algo sexy solo para ti</label>
+      <label class="option"><input type="checkbox" name="q9" value="💌 Que te escribiera una carta erótica"> 💌 Que te escribiera una carta erótica</label>
+      <label class="option"><input type="checkbox" name="q9" value="📽️ Que te grabara un video diciéndote lo que me provocas"> 📽️ Que te grabara un video diciéndote lo que me provocas</label>
+      <label class="option"><input type="checkbox" name="q9" value="🥰 Que te dijera cuánto te amo"> 🥰 Que te dijera cuánto te amo</label>
+      <label class="option"><input type="checkbox" name="q9" value="🤭 Que te sorprendiera con algo inesperado"> 🤭 Que te sorprendiera con algo inesperado</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>10. ¿Qué fantasía te gustaría que cumpliéramos juntos algún día?</h2>
+    <div class="options">
+      <label class="option"><input type="checkbox" name="q10" value="💏 Hacer el amor en un lugar inesperado"> 💏 Hacer el amor en un lugar inesperado</label>
+      <label class="option"><input type="checkbox" name="q10" value="🛁 Baño juntos con música y velas"> 🛁 Baño juntos con música y velas</label>
+      <label class="option"><input type="checkbox" name="q10" value="👀 Verte solo con la luz de la luna"> 👀 Verte solo con la luz de la luna</label>
+      <label class="option"><input type="checkbox" name="q10" value="✈️ Una escapada secreta solo tú y yo"> ✈️ Una escapada secreta solo tú y yo</label>
+      <label class="option"><input type="checkbox" name="q10" value="🔐 Cumplir todo lo que siempre imaginamos"> 🔐 Cumplir todo lo que siempre imaginamos</label>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <button type="button" onclick="showMessage()" style="padding: 15px 30px; font-size: 18px; background-color: #ec407a; border: none; border-radius: 10px; color: white; cursor: pointer;">Terminé 💖</button>
+  </div>
+</form>
+
+<div id="finalMessage">
+  <p>🥰 ¡Gracias por responder, cosita hermosa! 🥰</p>
+  <p>Aquí están las cosas que elegiste para hacer juntitos a la distancia:</p>
+  <div class="selected-list" id="selectedList"></div>
+  <p>Te amo muchísimo ❤️<br>– Tu chico 💌</p>
+</div>
+
+<script>
+  function showMessage() {
+    const form = document.getElementById('quizForm');
+    const selectedList = document.getElementById('selectedList');
+    selectedList.innerHTML = ''; // limpiar
+
+    // recolectar todas las opciones seleccionadas
+    const checkedBoxes = form.querySelectorAll('input[type="checkbox"]:checked');
+    if (checkedBoxes.length === 0) {
+      alert('Por favor, selecciona al menos una opción 😊');
+      return;
+    }
+
+    // Agrupar por pregunta para orden y claridad
+    const grouped = {};
+    checked
